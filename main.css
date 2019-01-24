@@ -1,0 +1,21 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+.container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    height: 290px;
+}
+
+.item {
+    transition: all .6s;
+    width: 100%;
+    position: absolute;
+}
