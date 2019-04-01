@@ -7,6 +7,8 @@ let defaultConfig = {
     interval: 1000
 }
 
+test_transition();
+
 swiper();
 
 function swiper(config) {
@@ -23,6 +25,13 @@ function swiper(config) {
                 break;
         }
     }, mergedConfig.interval);
+}
+
+function test_transition() {
+    let ele = document.querySelector('.test_transition');
+    ele.addEventListener('mouseenter', () => {
+        ele.setAttribute('style','width: 200px');
+    })
 }
 
 function slide() {
@@ -46,7 +55,7 @@ function slideY() {
     let next = getNext();  
 
     prev.style.zIndex = 1;
-    current.style.zIndex = 2;
+    current.style.zIndex = 222;
     next.style.zIndex = 0;
 }
 
