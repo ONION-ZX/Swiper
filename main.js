@@ -27,13 +27,6 @@ function swiper(config) {
     }, mergedConfig.interval);
 }
 
-function test_transition() {
-    let ele = document.querySelector('.test_transition');
-    ele.addEventListener('mouseenter', () => {
-        ele.setAttribute('style','width: 200px');
-    })
-}
-
 function slide() {
     slideX();
     slideY();
