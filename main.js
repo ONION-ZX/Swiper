@@ -7,7 +7,6 @@ let defaultConfig = {
     interval: 1000
 }
 
-test_transition();
 
 swiper();
 
